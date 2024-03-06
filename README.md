@@ -1,0 +1,2 @@
+# trucks-monitor
+Recruitment task
