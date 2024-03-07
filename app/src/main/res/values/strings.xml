@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Trucks Monitor</string>
+
+    <string name="vehicle_details">Vehicle details</string>
+    <string name="vehicle_distance_far_away">Truck is far away</string>
+    <string name="vehicle_distance_near_by">Truck is close</string>
+    <string name="vehicle_id">ID %s</string>
+    <string name="vehicle_nearby_count">There are %d trucks nearby</string>
+    <string name="info_loading">Loading…</string>
+    <string name="info_failure">Failed loading content</string>
+    <string name="button_reload">Reload</string>
+
+</resources>

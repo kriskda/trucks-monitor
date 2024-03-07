@@ -1,0 +1,71 @@
+[versions]
+androidAll = "4.3_r2-robolectric-0"
+composeVersion = "1.6.2"
+composeDestinationsVersion = "1.10.0"
+hiltAndroidXVersion = "1.2.0"
+hiltDaggerVersion = "2.50"
+material3Version ="1.2.0"
+junitVersion = "4.13.2"
+retrofitVersion = "2.9.0"
+coreKtx = "1.12.0"
+lifecycleRuntimeKtx = "2.7.0"
+activityCompose = "1.8.2"
+lifecycleRuntimeCompose = "2.7.0"
+coilCompose = "2.5.0"
+mockitoKotlinVersion = "5.1.0"
+coroutinesTestVersion= "1.6.0"
+uiTooling = "1.6.2"
+robolectric="4.11.1"
+androidGradlePlugin = "8.3.0"
+kotlin = "1.9.20"
+junit = "1.1.5"
+espresso-core = "3.5.1"
+appcompat = "1.6.1"
+material = "1.11.0"
+unmockplugin = "0.7.9"
+
+[libraries]
+android-all = { module = "org.robolectric:android-all", version.ref = "androidAll" }
+androidx-ui-test-junit4 = { module = "androidx.compose.ui:ui-test-junit4", version.ref = "composeVersion" }
+androidx-ui-test-manifest = { module = "androidx.compose.ui:ui-test-manifest", version.ref = "composeVersion" }
+testCoroutines = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-test", version.ref = "coroutinesTestVersion" }
+testMockitoKotlin = { module = "org.mockito.kotlin:mockito-kotlin", version.ref = "mockitoKotlinVersion" }
+testRobolectric = { module = "org.robolectric:robolectric", version.ref = "robolectric" }
+
+coreKtx = { module = "androidx.core:core-ktx", version.ref = "coreKtx" }
+lifecycleRuntimeKtx = { module = "androidx.lifecycle:lifecycle-runtime-ktx", version.ref = "lifecycleRuntimeKtx" }
+activityCompose = { module = "androidx.activity:activity-compose", version.ref = "activityCompose" }
+lifecycleRuntimeCompose = { module = "androidx.lifecycle:lifecycle-runtime-compose", version.ref = "lifecycleRuntimeCompose" }
+coilCompose = { module = "io.coil-kt:coil-compose", version.ref = "coilCompose" }
+
+composeUi = { module = "androidx.compose.ui:ui", version.ref = "composeVersion" }
+composeUiGraphics = { module = "androidx.compose.ui:ui-graphics", version.ref = "composeVersion" }
+composeUiToolingPreview = { module = "androidx.compose.ui:ui-tooling-preview", version.ref = "composeVersion" }
+composeMaterial3 = { module = "androidx.compose.material3:material3", version.ref = "material3Version" }
+
+composeDestinationAnimationsCore = { group = "io.github.raamcosta.compose-destinations", name = "animations-core", version.ref = "composeDestinationsVersion" }
+composeDestinationCore = { group = "io.github.raamcosta.compose-destinations", name = "core", version.ref = "composeDestinationsVersion" }
+composeDestinationKsp = { group = "io.github.raamcosta.compose-destinations", name = "ksp", version.ref = "composeDestinationsVersion" }
+
+hiltAndroidXCompiler = { group = "androidx.hilt", name = "hilt-compiler", version.ref = "hiltAndroidXVersion" }
+hiltAndroidXNavigationCompose = { group = "androidx.hilt", name = "hilt-navigation-compose", version.ref = "hiltAndroidXVersion" }
+
+hiltAndroid = { group = "com.google.dagger", name = "hilt-android", version.ref = "hiltDaggerVersion" }
+hiltDaggerCompiler = { group = "com.google.dagger", name = "hilt-compiler", version.ref = "hiltDaggerVersion" }
+hiltDaggerCore = { group = "com.google.dagger", name = "hilt-core", version.ref = "hiltDaggerVersion" }
+hiltGradlePlugin = { group = "com.google.dagger", name = "hilt-android-gradle-plugin", version.ref = "hiltDaggerVersion" }
+
+retrofit = { group = "com.squareup.retrofit2", name = "retrofit", version.ref = "retrofitVersion" }
+retrofitGson = { group = "com.squareup.retrofit2", name = "converter-gson", version.ref = "retrofitVersion" }
+
+testJunit = { group = "junit", name = "junit", version.ref = "junitVersion" }
+ui-tooling = { group = "androidx.compose.ui", name = "ui-tooling", version.ref = "uiTooling" }
+junit = { group = "androidx.test.ext", name = "junit", version.ref = "junit" }
+espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espresso-core" }
+appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+unmockplugin = { module = "com.github.bjoernq:unmockplugin", version.ref = "unmockplugin" }
+
+[plugins]
+androidLibrary = { id = "com.android.library", version.ref = "androidGradlePlugin" }
+kotlinAndroid = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
